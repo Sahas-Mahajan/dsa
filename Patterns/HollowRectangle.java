@@ -1,0 +1,31 @@
+package Patterns;
+
+/*
+FOR Hollow Rectangle
+* * * * * * *
+*           *
+*           *
+* * * * * * *
+ */
+
+import java.util.*;
+public class HollowRectangle {
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        int row = sc.nextInt(); // 2 inputs row x col matrix
+        int col = sc.nextInt();
+
+        for(int i = 1; i <= row; i++){
+            for(int j = 1; j <= col; j++){
+                if(i == 1 || i == row || j == 1 || j == col) {
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+}
